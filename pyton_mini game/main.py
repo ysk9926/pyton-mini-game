@@ -1,13 +1,14 @@
 from tkinter import *
 import subprocess
 
+                
 def click1():
     
     subprocess.run(["python", "race.py"])
 def click2():
     subprocess.run(["python", "pingpong.py"])
 def click3():
-    subprocess.run(["python", "triangle.py"])
+    subprocess.run(["python", "snake.py"])
 
 main = Tk()
 
@@ -22,7 +23,7 @@ frame1.place(relx = 0.5, rely = 0.5, anchor = "center")
 
 Button(frame1, text ="ball race", command=click1, width=10, height=2).grid(row = 0, column = 0)
 Button(frame1, text ="pingpong", command=click2, width=10, height=2).grid(row= 0, column = 1)
-Button(frame1, text ="game3", command=click3, width=10, height=2).grid(row= 0, column = 2)
+Button(frame1, text ="snake", command=click3, width=10, height=2).grid(row= 0, column = 2)
 
 
 main.mainloop()
